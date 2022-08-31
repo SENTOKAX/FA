@@ -1,0 +1,25 @@
+.list {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.viewDom {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  visibility: hidden;
+}
+
+.skeleton {
+  overflow: hidden;
+}
+
+.empty {
+  height: calc(100vh - 190px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

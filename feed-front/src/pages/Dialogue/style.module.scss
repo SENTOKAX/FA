@@ -1,0 +1,145 @@
+.dialogue {
+  flex: 1;
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+.nav {
+  height: 47px;
+  width: 100vw;
+  border-bottom: 1px solid #ededed;
+  background-color: white;
+  z-index: 1000;
+
+  .navTitle {
+    font-family: 'DengXian', ui-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.list {
+  width: 100%;
+  padding: 12px 20px 40px 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .scroll {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.sender {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-top: 1px solid #ededed;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+  display: flex;
+
+  .input input {
+    font-size: 13px;
+    flex: 1;
+    margin: 10px;
+    height: 28px;
+    background: #ededed;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+
+    &::placeholder {
+      color: #999999;
+    }
+  }
+
+  .send {
+    width: 47px;
+    height: 28px;
+    background: #3291ff;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.upload {
+  :global {
+    .adm-image-uploader {
+      width: 16px;
+      height: 10px;
+    }
+
+    .adm-space-item {
+      padding: 0 !important;
+    }
+
+    .adm-space-item .adm-image-uploader-cell {
+      display: none;
+    }
+  }
+}
+
+.tips {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 12px;
+}
+
+.error-wrapper {
+  height: 100%;
+  .error-fresh {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 7px 16px;
+    font-size: 13px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      margin-right: 2px;
+      transform: rotate(270deg);
+    }
+  }
+}
+
+.fail-container{
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 10px 20px;
+  .fail {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .retry{
+    color: #1677ff;
+  }
+}

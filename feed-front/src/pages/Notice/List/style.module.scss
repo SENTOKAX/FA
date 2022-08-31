@@ -1,0 +1,16 @@
+.list {
+  flex: 1;
+}
+
+.skeleton {
+  overflow: hidden;
+  height: 100%;
+}
+
+.empty,
+.error {
+  height: calc(100vh - 96px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

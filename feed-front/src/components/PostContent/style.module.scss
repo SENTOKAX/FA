@@ -1,0 +1,176 @@
+.content {
+  font-family: 'Mulish', ui-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.images {
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  gap: 5px;
+  margin-top: 10px;
+
+  &-none {
+    display: none !important;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    .image-one {
+      height: calc((100vw - 45px) / 2);
+      width: calc(100vw - 40px);
+      :global(.adm-image-tip) {
+        height: calc((100vw - 45px) / 2);
+      }
+    }
+    .image-two {
+      height: calc((100vw - 45px) / 3);
+      width: calc((100vw - 45px) / 2);
+    }
+    .image-three {
+      height: calc((100vw - 100px) / 3);
+      width: calc((100vw - 50px) / 3);
+    }
+  }
+  &-four {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .image-four {
+      height: calc((100vw - 45px) / 3);
+    }
+  }
+  &-many {
+    grid-template-columns: repeat(3, 1fr);
+    .image-many {
+      height: calc((100vw - 50px) / 3);
+    }
+  }
+}
+
+.image {
+  &-one,
+  &-many {
+    border-radius: 8px;
+  }
+  &-two {
+    &:nth-child(1) {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    &:nth-child(2) {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  &-three {
+    &:nth-child(1) {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    &:nth-child(3) {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  &-four {
+    &:nth-child(1) {
+      border-top-left-radius: 8px;
+    }
+    &:nth-child(2) {
+      border-top-right-radius: 8px;
+    }
+    &:nth-child(3) {
+      border-bottom-left-radius: 8px;
+    }
+    &:nth-child(4) {
+      border-bottom-right-radius: 8px;
+    }
+  }
+}
+
+.transmit {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  .transmit-content {
+    margin-top: 10px;
+  }
+}
+
+.deleted {
+  color: #3291ff;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  .postAvatar {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .nickName {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 24px;
+    word-break: keep-all;
+  }
+  .account {
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9a9a9;
+  }
+  .time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9a9a9;
+  }
+  :nth-child(n + 1) {
+    color: #a9a9a9;
+    line-height: 16px;
+  }
+
+  .name {
+    color: #000;
+    margin: 0 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .time {
+    white-space: nowrap;
+  }
+}
+
+.postContent {
+  margin: 7px 0;
+  font-family: 'Mulish', ui-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

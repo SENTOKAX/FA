@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewDom {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  visibility: hidden;
+}
+
+.skeleton {
+  overflow: hidden;
+}
+
+.empty {
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

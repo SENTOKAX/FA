@@ -1,0 +1,28 @@
+.wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.icon {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.btn {
+  width: 200px;
+  height: 48px;
+  border: none;
+  background-color: #00bc0c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.btn span {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 18px;
+}

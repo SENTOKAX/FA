@@ -1,0 +1,17 @@
+.customSkeleton {
+  display: flex;
+  align-items: center;
+}
+
+.avatarSkeleton {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.skeleton {
+  padding: 20px 20px 13px 20px;
+  border-bottom: 1px solid #ededed;
+}

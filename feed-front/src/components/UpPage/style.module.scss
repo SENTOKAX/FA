@@ -1,0 +1,19 @@
+.up {
+  position: fixed;
+  bottom: 152px;
+  right: 21px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.show {
+  display: none;
+}

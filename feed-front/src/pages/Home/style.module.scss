@@ -1,0 +1,44 @@
+.home {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 47px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.icon svg {
+  width: 21px;
+  height: 28px;
+}
+
+.list {
+  overflow: auto;
+  margin-top: 47px;
+}
+
+.skeleton {
+  overflow: hidden;
+  margin-top: 37px;
+}
+.empty,
+.error {
+  height: calc(100vh - 96px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

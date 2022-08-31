@@ -1,0 +1,187 @@
+.main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.icon {
+	margin-right: 5px;
+	width: 16px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	padding: 12px 20px 14px 20px;
+	height: 47px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.content {
+	padding: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.post {
+	display: flex;
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.postContent {
+	margin-bottom: 40px;
+}
+
+.line {
+	margin: 3px 0;
+	background-color: #EDEDED;
+	width: 2px;
+	flex: 1;
+}
+
+.comment {
+	display: flex;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+
+	:nth-child(n+1) {
+		color: #A9A9A9;
+		line-height: 14px;
+	}
+
+	.name {
+		color: #000;
+		margin-right: 4px;
+		max-width: 150px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		line-height: 16px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.nickName {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	margin-right: 5px;
+}
+
+.account {
+	margin-right: 5px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #A9A9A9;
+}
+
+.time {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #A9A9A9;
+}
+
+.reply {
+
+	font-size: 14px;
+	color: #A9A9A9;
+
+	span {
+		color: #3291FF;
+		margin-left: 5px;
+	}
+}
+
+.left {
+	margin-right: 12px;
+}
+
+.right {
+	flex: 1;
+	overflow: hidden;
+}
+
+.text {
+	--font-size: 16px;
+	--color: #333;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	img {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.cancel {
+	font-family: 'DengXian';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.footer {
+	height: 48px;
+	border-top: 1px solid #EDEDED;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 24px;
+	width: 56px;
+	--text-color: #fff;
+	font-weight: 200;
+	font-size: 12px;
+	line-height: 13px;
+}
+
+.img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+}
+
+:global(.uploadImg .adm-image-uploader-upload-button-wrap) {
+	position: fixed !important;
+	left: 20px;
+	bottom: 15px;
+}
+
+:global(.adm-space-item) {
+	margin-right: 5px !important;
+}

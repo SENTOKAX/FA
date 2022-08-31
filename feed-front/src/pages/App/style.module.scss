@@ -1,0 +1,19 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.navbar {
+  height: 48px;
+  background: #fff;
+  border-top: 1px solid #EDEDED;
+}
+
+.badge{
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 4px;
+}

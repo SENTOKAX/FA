@@ -1,0 +1,46 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended", "eslint:recommended"],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-console": [
+      "warn",
+      {
+        "allow": ["info", "error"]
+      }
+    ],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "no-debugger": ["warn"],
+    "eqeqeq": ["warn"],
+    "no-else-return": ["warn"],
+    "no-extra-bind": ["warn"],
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "array-bracket-spacing": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "indent": ["warn", 2],
+    "prefer-const": [
+      "warn",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ]
+  },
+  "ignorePatterns": "*.test.js"
+}
